@@ -16,11 +16,12 @@ body {
 }
 
 h1 {
-    font-size: 3em;
+  font-size: 3em;
 }
 
 h2 {
-    font-size: 2em;
+  font-size: 2.6em;
+  padding-bottom: 8px;
 }
 
 .content_container {
@@ -37,11 +38,11 @@ section {
   /* background-color: hotpink; */
   margin: 15px 0;
   padding: var(--padding_y) 0;
-  border-bottom: 1px solid grey;
+  /* border-bottom: 1px solid grey; */
 }
 
 .section_description {
-    padding: 10px 0;
+  padding: 10px 0;
 }
 
 .flexrow {
@@ -59,35 +60,40 @@ section {
   min-widsth: 300px; /* Prevents items from getting too narrow */
   box-sizing: border-box; /* Includes padding in width */
   text-align: left;
-
 }
 
 .block_image {
-aspect-ratio: 3/2;
-background-size: cover;
+  aspect-ratio: 3/2;
+  background-size: cover;
+  background-position: center;
+}
+
+.block_image_vertical {
+    aspect-ratio: 2/3;
+  background-size: cover;
   background-position: center;
 }
 
 .block_description {
-    padding-top: var(--padding_small);
+  padding-top: var(--padding_small);
 }
 
 .pad_x {
-    padding-left: var(--padding_x);
-    padding-right: var(--padding_x);
+  padding-left: var(--padding_x);
+  padding-right: var(--padding_x);
 }
 
 .pad_y {
-    padding-top: var(--padding_y);
-    padding-bottom: var(--padding_y);
+  padding-top: var(--padding_y);
+  padding-bottom: var(--padding_y);
 }
 
 .pad_top {
-    padding-top: var(--padding_y);
+  padding-top: var(--padding_y);
 }
 
 .pad_bottom {
-    padding-bottom: var(--padding_y);
+  padding-bottom: var(--padding_y);
 }
 
 /* Media query for narrow screens (e.g., phones) */
