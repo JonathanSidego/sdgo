@@ -3,7 +3,9 @@
   --padding_y: 15px;
   --padding_small: 5px;
   --color_background: #111;
-  --color_text: #eee;
+  --color_body: #ccc;
+  --color_heading: #eee;
+  --color_link: #fff;
 }
 
 * {
@@ -16,16 +18,23 @@
 body {
   font-size: 14px;
   background-color: var(--color_background);
-  color: var(--color_text);
+  color: var(--color_body);
+  scroll-behavior: smooth;
 }
 
 h1 {
   font-size: 3em;
+  color: var(--color_heading);
 }
 
 h2 {
   font-size: 2.6em;
   padding-bottom: 8px;
+  color: var(--color_heading);
+}
+
+a {
+    color: var(--color_link);
 }
 
 .content_container {
