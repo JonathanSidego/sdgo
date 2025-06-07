@@ -2,6 +2,8 @@
   --padding_x: 15px;
   --padding_y: 15px;
   --padding_small: 5px;
+  --color_background: #111;
+  --color_text: #eee;
 }
 
 * {
@@ -13,6 +15,8 @@
 
 body {
   font-size: 14px;
+  background-color: var(--color_background);
+  color: var(--color_text);
 }
 
 h1 {
@@ -32,6 +36,7 @@ h2 {
 
 .top_container {
   /* padding: var(--padding_x) var(--padding_y); */
+  padding-top: 25px;
 }
 
 section {
@@ -50,12 +55,12 @@ section {
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wraps; /* Allows items to wrap on smaller screens */
-  gap: 20px; /* Space between divs */
+  gap: var(--padding_y); /* Space between divs. Intentionally Y because I want x and y spacing to be the same */
   margin-bottom: var(--padding_y);
 }
 
 .block {
-  background-color: white;
+  /* background-color: white; */
   flex: 1; /* Each item takes equal space */
   min-widsth: 300px; /* Prevents items from getting too narrow */
   box-sizing: border-box; /* Includes padding in width */
