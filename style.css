@@ -68,7 +68,10 @@ section {
   /* background-color: hotpink; */
   margin: 15px 0;
   padding: var(--padding_y) 0;
-  /* border-bottom: 1px solid grey; */
+}
+
+section p {
+    margin: 3px 0;
 }
 
 .section_description {
