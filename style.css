@@ -1,6 +1,7 @@
 :root {
   --padding_x: 15px;
   --padding_y: 15px;
+  --padding_big_y: 20px;
   --padding_small: 5px;
   --color_background: #111;
   --color_body: #ccc;
@@ -15,16 +16,21 @@
   font-family: Arial, sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
   font-size: 14px;
   background-color: var(--color_background);
   color: var(--color_body);
-  scroll-behavior: smooth;
 }
 
-h1, h2, h3 {
-    color: var(--color_heading);
-font-family: "Alegreya", serif;
+h1,
+h2,
+h3 {
+  color: var(--color_heading);
+  font-family: "Alegreya", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -32,7 +38,8 @@ font-family: "Alegreya", serif;
 
 h1 {
   font-size: 4em;
-  
+  line-height: 1.2;
+  margin-bottom: var(--padding_y);
 }
 
 h2 {
@@ -41,18 +48,20 @@ h2 {
 }
 
 a {
-    color: var(--color_link);
+  color: var(--color_link);
 }
 
 .content_container {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px var(--padding_x);
+  scroll-behavior: smooth;
 }
 
 .top_container {
   /* padding: var(--padding_x) var(--padding_y); */
-  padding-top: 25px;
+  margin-top: 25px;
+  margin-bottom: 50px;
 }
 
 section {
@@ -71,12 +80,13 @@ section {
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wraps; /* Allows items to wrap on smaller screens */
-  gap: var(--padding_y); /* Space between divs. Intentionally Y because I want x and y spacing to be the same */
+  gap: var(
+    --padding_y
+  ); /* Space between divs. Intentionally Y because I want x and y spacing to be the same */
   margin-bottom: var(--padding_y);
 }
 
 .block {
-  /* background-color: white; */
   flex: 1; /* Each item takes equal space */
   min-widsth: 300px; /* Prevents items from getting too narrow */
   box-sizing: border-box; /* Includes padding in width */
@@ -90,7 +100,7 @@ section {
 }
 
 .block_image_vertical {
-    aspect-ratio: 2/3;
+  aspect-ratio: 2/3;
   background-size: cover;
   background-position: center;
 }
@@ -122,6 +132,6 @@ section {
   .blsock {
     flex: 100%; /* Full width for each item */
     min-width: 100%; /* Ensures items take full container width */
-    min-height: 250px;
+    /* min-height: 250px; */
   }
 }
