@@ -30,6 +30,7 @@ h1,
 h2,
 h3 {
   color: var(--color_heading);
+  /* font-family: "DM Serif Display", serif; */
   font-family: "Alegreya", serif;
   font-optical-sizing: auto;
   font-weight: 400;
