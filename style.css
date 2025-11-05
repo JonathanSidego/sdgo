@@ -7,6 +7,8 @@
   --color_body: #ccc;
   --color_heading: #eee;
   --color_link: #fff;
+
+  --mobile_breakpoint: 768px;
 }
 
 * {
@@ -91,6 +93,7 @@ section p {
 }
 
 .block {
+    display: block;
   flex: 1; /* Each item takes equal space */
   min-widsth: 300px; /* Prevents items from getting too narrow */
   box-sizing: border-box; /* Includes padding in width */
@@ -101,6 +104,9 @@ section p {
   aspect-ratio: 3/2;
   background-size: cover;
   background-position: center;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .block_image_vertical {

@@ -22,7 +22,7 @@
 </head>
 
 <body>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> -->
 
     <div class="content_container">
         <div class="top_container">
@@ -31,6 +31,7 @@
                 <a href="#film">Film</a>&nbsp;
                 <a href="#photography">Photography</a>&nbsp;
                 <a href="#design">Design</a>&nbsp;
+                <a href="#press">Press</a>&nbsp;
                 <a href="mailto:jonathan@sidego.com">Email</a>
             </nav>
         </div>
@@ -40,7 +41,12 @@
             <div class="flexrow">
                 <div class="block">
                     <a href="https://www.youtube.com/watch?v=IlwbG7dXi7A" target="_blank">
-                        <div class="block_image" style="background-image:url(img/film_LUX.gif)"></div>
+                        <!-- <img class="block_image" src="img/film_LUX.gif"> -->
+                        <picture class="block_image">
+                            <source media="(max-width: 768px)" srcset="img/film_LUX_small.gif">
+                            <source media="(min-width: 769px)" srcset="img/film_LUX.gif">
+                            <img class="block_image" src="img/film_LUX.gif" alt="LUX" />
+                        </picture>
                     </a>
                     <div class="block_description">
                         <p>SHE WHO DARES ~ Lux</p>
@@ -98,8 +104,10 @@
                         <div class="block_image" style="background-image:url(img/film_LYCS.gif)"></div>
                     </a>
                     <div class="block_description">
-                        <p>Can $10 make a difference?  ~ The Life You Can Save</p>
-                        <p>Director (Featuring <a href="https://www.news24.com/drum/celebs/news/actor-lemogang-tsipa-on-playing-shaka-keeping-fit-and-his-love-for-snakes-20230808" target="_blank">Lemogang Tsipa</a>)</p>
+                        <p>Can $10 make a difference? ~ The Life You Can Save</p>
+                        <p>Director (Featuring <a
+                                href="https://www.news24.com/drum/celebs/news/actor-lemogang-tsipa-on-playing-shaka-keeping-fit-and-his-love-for-snakes-20230808"
+                                target="_blank">Lemogang Tsipa</a>)</p>
                     </div>
                 </div>
             </div>
@@ -111,9 +119,14 @@
                     <div class="block_description">
                         <p>Alex's War</p>
                         <p>Executive Producer</p>
-                        <p>Directed by <a href="https://www.rollingstone.com/culture/culture-features/tfw-no-gf-incel-culture-sxsw-992943/" target="_blank">Alex Lee Moyer</a></p>
-                        <p><a href="https://variety.com/2022/film/reviews/alexs-war-review-alex-jones-1235329491/" target="_blank">Variety</a>,
-                        <a href="https://nymag.com/intelligencer/2022/07/alex-jones-documentary-alex-lee-moyer.html" target="_blank">New York Magazine</a></p>
+                        <p>Directed by <a
+                                href="https://www.rollingstone.com/culture/culture-features/tfw-no-gf-incel-culture-sxsw-992943/"
+                                target="_blank">Alex Lee Moyer</a></p>
+                        <p><a href="https://variety.com/2022/film/reviews/alexs-war-review-alex-jones-1235329491/"
+                                target="_blank">‘Alex’s War’ Review: A Gripping and Disturbing Look at Alex Jones and the Politics of Unreality</a> &mdash; Variety
+                            <!-- <a href="https://nymag.com/intelligencer/2022/07/alex-jones-documentary-alex-lee-moyer.html"
+                                target="_blank">New York Magazine</a> -->
+                        </p>
                     </div>
                 </div>
             </div>
@@ -129,12 +142,11 @@
                     </div>
                 </div>
             </div>
-            <!-- <p>
-                <a href="https://www.youtube.com/watch?v=QyfWChDhtu0" target="_blank">The Surrounding Game</a>
-                (Executive Producer)
-            </p> -->
             <p>
-                <a href="https://www.0nsetcreative.com/" target="_blank">0nset Creative</a> (Partner & Producer)
+                More:
+            </p>
+            <p>
+                Partner & Producer at <a href="https://www.0nsetcreative.com/" target="_blank">0nset Creative</a>
             </p>
         </section>
         <section id="photography">
@@ -187,6 +199,25 @@
                     </div>
                 </div>
             </div>
+        </section>
+        <section id="press">
+            <h2>Press</h2>
+            <div class="flexrow">
+                <div class="block">
+                    <a href="img/press_gq_content.png" target="_blank">
+                        <div class="block_image" style="background-image:url(img/press_gq_cover.png)"></div>
+                    </a>
+                    <div class="block_description">
+                        <p>GQ South Africa</p>
+                        <p>"In sunny San Francisco, a mere sixteen-thousand kilometres away from his hometown, there's a South African rapidly being recognised as one of Silicon Valley's brightest creatives: Jonathan Sidego"</p>
+                    </div>
+                </div>
+            </div>
+            <p>More press:</p>
+            <p>
+                <a href="https://www.mediaupdate.co.za/media/121627/jonathan-sidego-a-capetonian-filmmaker-making-waves-in-silicon-valley"
+                    target="_blank">"Jonathan Sidego: A Capetonian filmmaker making waves in Silicon Valley"</a>  &mdash; Media Update
+            </p>
         </section>
         <section id="end">
             <center><img src="img/smile_white.png" style="width: 33%; min-width: 100px; margin: 0 auto;" /></center>
